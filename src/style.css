@@ -1,4 +1,38 @@
-h1 {
-  color: pink;
-  background-color: aqua;
+:root {
+  --branding-color:#9268a5;
+  --secondary-color: #ffe9e3;
+  --primary-font:font-family: 'Josefin Sans', sans-serif;
+  
+}
+body{
+  font-family: var(--primary-font);
+
+}
+.hero {
+  background-color: var(--secondary-color);
+  text-align: center;
+  padding:160px 20px;
+
+}
+h2{
+  line-height: 2;
+  font-size:24px;
+  font-weight: bold;
+}
+h1{
+  font-size: 96px;
+  font-weight: bold;
+}
+p{
+  font-weight: bold;
+  font-size:20px;
+  margin:0;
+}
+.btn-branding{
+  background-color: var(--branding-color);
+  color:var(--secondary-color);
+  border-radius: 4px;
+  font-size: 18px;
+  line-height: 27px;
+  padding:15px 30px
 }
