@@ -76,6 +76,14 @@ line-height: 1.5;
 .project-description{
   padding:120px 60px;
 }
+.contact-container {
+  background-color: var(--secondary-color);
+}
+.contacts{
+  color: var(--branding-color);
+  padding: 10px;
+
+}
 @media(max-width:900px) {
   h1{
     font-size:44px;
