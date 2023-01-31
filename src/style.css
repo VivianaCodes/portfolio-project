@@ -1,5 +1,5 @@
 :root {
-  --branding-color:#9268a5;
+  --branding-color:rgb(146, 104, 165);
   --secondary-color: #ffe9e3;
   --primary-font:font-family: 'Josefin Sans', sans-serif;
   
@@ -9,10 +9,6 @@ body{
 }
 h1, h2, h3, h4, h5, h6{
   font-weight: bold;
-}
-h1{
-  font-size: 96px;
-  line-height: 1.5;
 }
 h2{
   line-height: 1.5;
@@ -24,10 +20,19 @@ p{
   font-size: 16px;
   line-height: 30px;
 }
+.logo{
+  max-height: 45px;
+}
+.active{
+  color: var(--branding-color) !important;
+}
+.nav-link a{
+  font-family: var(--primary-font) !important;
+}
 .hero {
   background-color: var(--secondary-color);
   text-align: center;
-  padding:160px 20px;
+  padding:100px 20px;
 }
 .hero p{
   font-weight: bold;
@@ -35,7 +40,7 @@ p{
   margin:0;
 }
 .content-container{
-  padding:160px 20px;
+  padding:100px 20px;
 }
 .content h1{
   font-size: 64px;
@@ -49,7 +54,7 @@ p{
 line-height: 1.5;
 }
 .content p{
-  font-size:14px;
+  font-size:16px;
 }
 .content{
   margin: 30px;
@@ -82,10 +87,12 @@ line-height: 1.5;
 .contacts{
   color: var(--branding-color);
   padding: 10px;
-
+}
+.about-me{
+  background-color: rgba(146,104,165, 0.5);
 }
 @media(max-width:900px) {
-  h1{
+  .content h1, h1{
     font-size:44px;
     line-height: 80px;
   }
@@ -95,13 +102,8 @@ line-height: 1.5;
   .hero h2{
     line-height:1;
   }
-  .content{
+  .content-container, .project-description {
     text-align: center;
     padding: 0;
-
   }
-  .project-description{
-    padding: 0;
-    text-align:center;}
-  
-}
+  }
